@@ -24,8 +24,8 @@ export default function RootLayout({
                             arcaneLogo="/ArcaneLogo.png"
                             arcaneLogoAlt="Arcane Logo"
                             headerLinks={[
-                                { label: "Shop", url: "/shop" }, // Link for shop page
-                                { label: "Connect", url: "/connect" } // Link for connect page
+                                { label: "SHOP", url: "/shop" },
+                                { label: "CONNECT", url: "/connect" }
                             ]}
                         />
                         <main className="flex-grow flex items-center justify-center">

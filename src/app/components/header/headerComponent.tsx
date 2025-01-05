@@ -16,7 +16,7 @@ export default function HeaderComponent({
             <img src={arcaneLogo} alt={arcaneLogoAlt} className="h-full"></img>
             <div className="flex gap-16">
                 {headerLinks.map((headerLink, index) => (
-                    <a key={index} href={headerLink.url} className="text-xl">
+                    <a key={index} href={headerLink.url} className="font-sans">
                         {headerLink.label}
                     </a>
                 ))}
