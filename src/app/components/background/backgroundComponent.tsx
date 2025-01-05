@@ -7,7 +7,7 @@ export default function BackgroundComponent({
 }: React.PropsWithChildren<BackgroundProps>) {
     return (
         <div>
-            <img src={ backgroundImage } alt={ backgroundAlt } className="fixed h-full w-full">
+            <img src={ backgroundImage } alt={ backgroundAlt } className="fixed h-full w-full object-cover">
             </img>
         </div>
     );
