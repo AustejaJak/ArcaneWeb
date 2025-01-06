@@ -2,6 +2,7 @@ import "./globals.css";
 import React from "react";
 import BackgroundComponent from "@/app/components/background/backgroundComponent";
 import HeaderComponent from "@/app/components/header/headerComponent";
+import FooterComponent from "@/app/components/footer/footerComponent";
 
 export default function RootLayout({
     children,
@@ -31,6 +32,8 @@ export default function RootLayout({
                         <main className="flex-grow flex items-center justify-center">
                             {children}
                         </main>
+
+                        <FooterComponent/>
                     </div>
                 </div>
             </body>

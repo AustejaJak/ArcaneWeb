@@ -8,12 +8,15 @@ export default {
   ],
   theme: {
     fontFamily:{
-      'sans': ['mally'],
+      'mallySemibold': ['MallySemibold', 'sans-serif'],
+      'mally': ['Mally', 'sans-serif'],
+      'vayu': ['Vayu', 'sans-serif'],
     },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'darkBlue-600': "#3A4563",
       },
     },
   },

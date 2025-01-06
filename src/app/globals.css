@@ -4,11 +4,25 @@
 
 @layer base {
   @font-face {
-    font-family: 'Mally';
+    font-family: 'MallySemibold';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url('/fonts/MallySemibold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Mally';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/MallyRegular.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Vayu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/VayuSansBold.ttf') format('truetype');
   }
 }
 
