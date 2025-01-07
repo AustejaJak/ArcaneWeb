@@ -24,6 +24,13 @@
     font-display: swap;
     src: url('/fonts/VayuSansBold.ttf') format('truetype');
   }
+  @font-face {
+    font-family: 'HeadingNow';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/HeadingNowTrial-28Heavy.ttf') format('truetype');
+  }
 }
 
 :root {

@@ -11,6 +11,7 @@ export default {
       'mallySemibold': ['MallySemibold', 'sans-serif'],
       'mally': ['Mally', 'sans-serif'],
       'vayu': ['Vayu', 'sans-serif'],
+      'headingNow': ['HeadingNow', 'sans-serif'],
     },
     extend: {
       colors: {

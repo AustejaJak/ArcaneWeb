@@ -29,7 +29,7 @@ export default function RootLayout({
                                 { label: "CONNECT", url: "/connect" }
                             ]}
                         />
-                        <main className="flex-grow flex items-center justify-center">
+                        <main className="flex-grow flex items-start justify-center">
                             {children}
                         </main>
 
