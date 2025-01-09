@@ -13,7 +13,7 @@ export default function HeaderComponent({
 }: React.PropsWithChildren<HeaderProps>){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around items-center animate-fadeIn">
             <a href="https://www.riotgames.com/en" target="_blank" rel="noopener noreferrer">
                 <img src={companyLogo} alt={companyLogoAlt} className="h-14 w-14 md:h-20 md:w-20 lg:w-32 lg:h-32"/>
             </a>

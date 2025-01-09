@@ -16,11 +16,16 @@ export default {
     extend: {
       animation: {
         float: 'float 4s ease-in-out infinite',
+        'fadeIn': 'fadeIn 2s ease-in-out',
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
+        },
+        'fadeIn': {
+          '0%': { transform: 'translateY(-120px)' },
+          '100%': { transform: 'translateY(0px)' },
         }
       },
       colors: {
