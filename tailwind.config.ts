@@ -17,6 +17,7 @@ export default {
       animation: {
         float: 'float 4s ease-in-out infinite',
         'fadeIn': 'fadeIn 2s ease-in-out',
+        fade: 'fade 3s ease-in-out',
       },
       keyframes: {
         float: {
@@ -26,6 +27,10 @@ export default {
         'fadeIn': {
           '0%': { transform: 'translateY(-120px)' },
           '100%': { transform: 'translateY(0px)' },
+        },
+        fade: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         }
       },
       colors: {
