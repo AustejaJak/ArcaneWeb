@@ -3,6 +3,7 @@
 import React, {useState} from "react";
 import {HeaderProps} from "@/app/components/header/headerProps";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/16/solid";
+import RiotGamesLogo from "@/app/components/svg/RiotGamesLogo";
 
 export default function HeaderComponent({
     companyLogo,
@@ -15,7 +16,7 @@ export default function HeaderComponent({
     return (
         <div className="flex justify-around items-center animate-fadeIn">
             <a href="https://www.riotgames.com/en" target="_blank" rel="noopener noreferrer">
-                <img src={companyLogo} alt={companyLogoAlt} className="h-14 w-14 md:h-20 md:w-20 lg:w-32 lg:h-32"/>
+                <RiotGamesLogo fill="fill-white" hoverFill="hover:fill-riotRed"/>
             </a>
             <img src={arcaneLogo} alt={arcaneLogoAlt} className="h-12 md:h-20 lg:h-32 object-contain"></img>
 
@@ -28,14 +29,26 @@ export default function HeaderComponent({
 
             <div className="hidden md:flex flex-wrap justify-end gap-4 md:gap-8">
                 {headerLinks.map((headerLink, index) => (
-                    <a key={index} href={headerLink.url} className="font-mallySemibold text-xs md:text-base">
+                    <a
+                        key={index}
+                        href={headerLink.url}
+                        className="relative group transition-all duration-200 font-mallySemibold px-3 py-1 text-xs md:text-base hover:bg-gray-500 hover:bg-opacity-35 hover:rounded-md"
+                    >
                         {headerLink.label}
+                        <span
+                            className="absolute left-0 right-0 -bottom-3 h-5 group-hover:bg-transparent"
+                        ></span>
+                        <span
+                            className="absolute transition-all duration-200 left-0 right-0 -bottom-3.5 h-[5px] bg-riotSand opacity-0 group-hover:opacity-100 after: rounded-md"
+                        ></span>
                     </a>
                 ))}
             </div>
 
+
             {isMenuOpen && (
-                <div className="absolute top-16 left-0 w-full bg-gray-400 bg-opacity-5 shadow-xs flex flex-col items-center gap-4 py-4 md:hidden z-10">
+                <div
+                    className="absolute top-16 left-0 w-full bg-gray-400 bg-opacity-5 shadow-xs flex flex-col items-center gap-4 py-4 md:hidden z-10">
                     {headerLinks.map((headerLink, index) => (
                         <a
                             key={index}

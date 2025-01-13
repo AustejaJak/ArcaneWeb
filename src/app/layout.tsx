@@ -20,7 +20,7 @@ export default function RootLayout({
 
                     <div className="flex flex-col h-full w-full z-10">
                         <HeaderComponent
-                            companyLogo="/RiotGamesLogo.png"
+                            companyLogo="/RiotGamesLogo.svg"
                             companyLogoAlt="Company Logo"
                             arcaneLogo="/ArcaneLogo.png"
                             arcaneLogoAlt="Arcane Logo"

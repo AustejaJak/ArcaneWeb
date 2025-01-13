@@ -37,6 +37,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'darkBlue-600': "#3A4563",
+        'riotRed': "#EB0029",
+        'riotSand': "#EDE0CE"
       },
     },
   },
